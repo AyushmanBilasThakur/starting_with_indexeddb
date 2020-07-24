@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List🛒</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="banner">Grocery List🛒</h1>
+
+    <div class="container">
+        <form id="main_form"> 
+            <h2>Add Item</h2>
+            <div class="input_group">
+                <label for="item_name">Item Name</label>
+                <input type="text" name="item_name" id="item_name" placeholder="Butter">
+            </div>
+            <div class="input_group">
+                <label for="item_qty">Item Quantity</label>
+                <input type="text" inputmode="numeric" pattern="[0-9]" name="item_qty" id="item_qty" placeholder="10">
+            </div>
+            <div class="input_group">
+                <input type="submit" name="add_item" value="Add Item">
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Items</h2>
+        <div class="card">
+            <div class="check_and_name">
+                <input type="checkbox" name="" id="">
+                <p class="name">Item 1</p>
+            </div>
+            <p class="quantity">x 5</p>
+        </div>
+
+        <div class="card checked">
+            <div class="check_and_name">
+                <input type="checkbox" checked name="" id="">
+                <p class="name">Item 2</p>
+            </div>
+            <p class="quantity">x 20</p>
+        </div>
+    </div>
+</body>
+</html>

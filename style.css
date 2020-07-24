@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    text-align: center;
+    padding: 20px;
+    background-color: teal;
+    font-size: 2.3rem;
+    color: white;
+}
+
+.container{
+    width: 90%;
+    margin: 30px auto;
+    max-width: 500px;
+    
+}
+
+h2{
+    margin-bottom: 10px;
+    color: teal;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::after{
+    content: " ";
+    background-color: teal;
+    height: 3px;
+    width: 60%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    animation: scale-in 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+@keyframes scale-in{
+    0%{
+        transform: scaleX(0);
+    }
+    70%{
+        transform: scaleX(1.4);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+.container form .input_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+input{
+    padding: 5px 10px; 
+}
+
+input[type="text"]{
+    width: 100%;
+}
+
+input[type="submit"]{
+    background-color:teal;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card{
+    border: 3px solid black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.card.checked{
+    text-decoration: line-through;
+    color: #770000;
+}
+
+.check_and_name{
+    display: flex;
+    align-items: center;
+}
+
+p.name{
+    margin-left: 20px;
+}
