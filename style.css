@@ -71,7 +71,7 @@ input[type="text"]{
     width: 100%;
 }
 
-input[type="submit"]{
+input[type="submit"],button{
     background-color:teal;
     border: none;
     outline: none;
@@ -91,16 +91,27 @@ input[type="submit"]{
     margin: 10px 0;
 }
 
-.card.checked{
+.card.checked p{
     text-decoration: line-through;
-    color: #770000;
+    color: red;
+    font-weight: bold;
 }
 
-.check_and_name{
+.d_flex{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-p.name{
-    margin-left: 20px;
+.d_flex p{
+    margin: 0 10px;
+}
+
+.delete{
+    background: #f34949;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background: #da3131;
 }
